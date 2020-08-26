@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "name": "Collections"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "DescriptionTop": {
+      "type": "richtext"
+    },
+    "DescriptionBottom": {
+      "type": "richtext"
+    },
+    "SearchParameter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "search.search-parameter",
+      "required": true,
+      "min": 1
+    },
+    "Slug": {
+      "type": "string",
+      "required": true,
+      "regex": "^[a-z0-9-]+$"
+    }
+  }
+}

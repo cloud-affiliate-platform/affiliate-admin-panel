@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_search_search_parameters",
+  "info": {
+    "name": "SearchParameter",
+    "icon": "search"
+  },
+  "options": {},
+  "attributes": {
+    "Term": {
+      "type": "string",
+      "required": true
+    },
+    "Field": {
+      "type": "string",
+      "required": true
+    },
+    "Operators": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
